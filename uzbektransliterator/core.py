@@ -1400,8 +1400,3 @@ def transliterate(text, to_variant):
         text = to_latin(text)
 
     return text
-
-if __name__ == "__main__":
-    """cat input_in_lat.txt | python transliterate.py > output_in_cyr.txt"""
-    for line in sys.stdin:
-        sys.stdout.write(transliterate(line, 'cyrillic'))
